@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button mat-button [routerLink]="'/'">{{ 'Home' | translate }}</button>
+  <button mat-button [routerLink]="'games/scores-list'" color="primary">{{ 'Game Records' | translate }}</button>
+  <span class="spacer"></span>
+  <button mat-flat-button color="primary">
+    <mat-icon>add_circle</mat-icon>
+    {{ 'Start a game' | translate }}
+  </button>
+</mat-toolbar>
+<mat-toolbar>
+  <span class="spacer"></span>
+  <span>{{ 'Game Records' | translate }}</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+
+<app-scores-list-component [nbGamesToDisplay]="40"></app-scores-list-component>
+
+

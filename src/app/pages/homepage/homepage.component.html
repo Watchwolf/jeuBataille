@@ -1,0 +1,32 @@
+<mat-toolbar>
+  <button mat-button [routerLink]="'/'" color="primary">{{ 'Home' | translate }}</button>
+  <button mat-button [routerLink]="'games/scores-list'">{{ 'Game Records' | translate }}</button>
+  <span class="spacer"></span>
+  <button mat-flat-button color="primary">
+    <mat-icon>add_circle</mat-icon>
+    {{ 'Start a game' | translate }}
+  </button>
+</mat-toolbar>
+<mat-toolbar>
+  <span class="spacer"></span>
+  <span>{{ 'Card game "the battle"' | translate }}</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<p class="btStartGame">
+	<button mat-flat-button color="primary">
+		<mat-icon>add_circle</mat-icon>
+		{{ 'Start a game' | translate }}
+	</button>
+</p>
+
+<p class="definition">
+	{{ 'War is a simple and popular card game, usually played by two players. Each player has a deck of cards evenly distributed. Each turn, players simultaneously reveal the top card of their deck, and the player with the highest value card wins a point. In the event of a tie (two cards of the same value), neither player wins a point. The game ends once all the cards have been turned over.' | translate }}
+</p>
+
+<mat-toolbar>
+  <span class="spacer"></span>
+  <span>{{ 'Latest games' | translate }}</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+<app-scores-list-component [nbGamesToDisplay]="10"></app-scores-list-component>
