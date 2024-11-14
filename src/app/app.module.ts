@@ -5,10 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApiModule, Configuration, ConfigurationParameters } from './server-api/v1';
+import { environment } from './environments/environment';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpErrorInterceptor } from './http-error.interceptor';
+
+export function apiConfigFactory(): Configuration {
+  const params: ConfigurationParameters = {
+    basePath: environment.ServerAPIPath,
+    credentials: environment.ServerCredentials,
+    withCredentials: environment.serverWithCredentials
+  };
+  return new Configuration(params);
+}
 
 @NgModule({
   declarations: [
@@ -27,8 +40,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       }
     }),
     BrowserAnimationsModule,
+    ApiModule.forRoot(apiConfigFactory),
+    MatSnackBarModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpErrorInterceptor,
+      multi: true
+    },
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

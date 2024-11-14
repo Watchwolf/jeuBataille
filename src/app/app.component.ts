@@ -13,7 +13,6 @@ export class AppComponent {
     private translate: TranslateService) {
 
     var userLangNavigator = navigator.language.toLowerCase().split('-')[0]
-    if(userLangNavigator != 'en')
-      this.translate.use(userLangNavigator); //'fr' or 'en'
+    this.translate.use(userLangNavigator); //'fr' or 'en'
   }
 }

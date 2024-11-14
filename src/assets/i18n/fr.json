@@ -1,8 +1,24 @@
 {
-	"Game Records": "Records du jeu",
 	"Start a game": "Lancer une partie",
 	"Home": "Accueil",
 	"Card game \"the battle\"": "Jeu de carte \"la bataille\"",
 	"War is a simple and popular card game, usually played by two players. Each player has a deck of cards evenly distributed. Each turn, players simultaneously reveal the top card of their deck, and the player with the highest value card wins a point. In the event of a tie (two cards of the same value), neither player wins a point. The game ends once all the cards have been turned over.": "La bataille est un jeu de cartes simple et populaire, généralement joué à deux. Chaque joueur possède un paquet de cartes réparti équitablement. À chaque tour, les joueurs dévoilent simultanément la première carte de leur paquet, et celui qui a la carte de valeur gagne un point. En cas d'égalité (deux cartes de même valeur), aucun joueur ne gagne de point. Le jeu se termine une fois que toutes les cartes ont été retournées.",
-	"Latest games": "Dernières parties"
+	"Latest games": "Dernières parties",
+	"Game": "Partie",
+	"Deck": "Pioche",
+	"remaining cards": "cartes restantes",
+	"Card returned": "Carte retournée",
+	"Next round": "Tour suivant",
+	"Score": "Score",
+	"Congratulations player 1, you won the game.": "Félicitation joueur 1, tu as gagné la partie.",
+	"Saved game": "Partie sauvegardée",
+	"An error has occurred, our teams have been notified and will intervene quickly.": "Une erreur s'est produite, nos équipes sont prévenues et vont intervenir rapidement.",
+	"Access to this page is prohibited.": "L'accès à cette page vous est interdit.",
+	"Due to a technical error you have been disconnected, please reconnect.": "Suite à une erreur technique vous avez été déconnecté, veuillez vous reconnecter.",
+	"Player": "Joueur",
+	"Please enter the player name": "Veuillez saisir le nom du joueur",
+	"Player Name": "Nom du joueur",
+	"Save": "Sauvegarder",
+	"Félicitations {{playerNameWon}}, vous avez gagné la partie.": "Congratulations {{playerNameWon}}, you won the game.",
+	"Close": "Fermer"
 }

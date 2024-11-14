@@ -1,0 +1,18 @@
+.scoresList {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.scoresList tr th {
+	width: 25%;
+	border-bottom: 1px solid #000;
+}
+
+.scoresList tr td {
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+.scoresList tr td.win {
+	background-color: var(--arc-palette-foregroundSecondary)
+}

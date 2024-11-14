@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'games/scores-list',
     loadComponent: () => import('./pages/games/scores-list/scores-list.component').then((m) => m.ScoresListComponent),
   },
+  {
+    path: 'games/game',
+    loadComponent: () => import('./pages/games/game/game.component').then((m) => m.GameComponent),
+  },
 ]
 
 @NgModule({

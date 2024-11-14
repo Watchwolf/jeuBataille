@@ -1,15 +1,15 @@
 <mat-toolbar>
   <button mat-button [routerLink]="'/'">{{ 'Home' | translate }}</button>
-  <button mat-button [routerLink]="'games/scores-list'" color="primary">{{ 'Game Records' | translate }}</button>
+  <button mat-button [routerLink]="'/games/scores-list'" color="primary">{{ 'Latest games' | translate }}</button>
   <span class="spacer"></span>
-  <button mat-flat-button color="primary">
+  <button mat-flat-button color="primary" [routerLink]="'/games/game'">
     <mat-icon>add_circle</mat-icon>
     {{ 'Start a game' | translate }}
   </button>
 </mat-toolbar>
 <mat-toolbar>
   <span class="spacer"></span>
-  <span>{{ 'Game Records' | translate }}</span>
+  <span>{{ 'Latest games' | translate }}</span>
   <span class="spacer"></span>
 </mat-toolbar>
 

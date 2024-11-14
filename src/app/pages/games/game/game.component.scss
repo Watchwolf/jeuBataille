@@ -1,0 +1,41 @@
+.playerForm {
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.game {
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.player1 {
+	padding: 0.5em;
+	margin: 0.1em;
+	margin-bottom: 0.5em;
+	width: 100%;
+	border: 0px solid #000;
+	border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.player2 {
+	padding: 0.5em;
+	margin: 0.1em;
+	margin-bottom: 0.5em;
+	width: 100%;
+	border: 0px solid #000;
+	border-radius: 10px;
+    background-color: beige;
+}
+
+@media (min-width: 768px) {
+	.player1 {
+		display: inline-block;
+		width: 45%;
+	}
+	.player2 {
+		display: inline-block;
+		width: 45%;
+	}
+}
+
